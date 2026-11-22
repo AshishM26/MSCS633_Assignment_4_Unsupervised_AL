@@ -34,3 +34,6 @@ outputs/quick/
 /notes/
 /guides/
 /local-notes/
+
+# Blackboard submission remains local
+/submission/
