@@ -15,3 +15,8 @@ build/
 dist/
 *.egg-info/
 outputs/quick/
+
+# Local working notes and guides
+/notes/
+/guides/
+/local-notes/
