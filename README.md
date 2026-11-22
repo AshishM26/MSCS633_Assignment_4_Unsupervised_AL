@@ -75,9 +75,9 @@ Precision is the fraction of alerts that are fraud; recall is the fraction of fr
 
 ## Results
 
-The full 20-epoch CPU run used 227,845 training and 56,962 test transactions (98 frauds). The primary unsupervised model obtained ROC-AUC **0.9534**, average precision **0.1117**, precision **0.1616**, recall **0.1633**, and F1 **0.1624** at the training-derived threshold **8.570630**. The confusion matrix was TN=56,781, FP=83, FN=82, TP=16; 99 transactions were flagged. Stronger ranking performance does not imply high recall at this threshold: 82 of 98 frauds were missed. Exact values and runtime are in [metrics.json](outputs/metrics.json).
+The full 20-epoch MPS run used 227,845 training and 56,962 test transactions (98 frauds). The primary unsupervised model obtained ROC-AUC **0.9546**, average precision **0.1568**, precision **0.2447**, recall **0.2347**, and F1 **0.2396** at the training-derived threshold **8.945906**. The confusion matrix was TN=56,793, FP=71, FN=75, TP=23; 94 transactions were flagged. Stronger ranking performance does not imply high recall at this threshold: 75 of 98 frauds were missed. Exact values and runtime are in [metrics.json](outputs/metrics.json).
 
-The **normal-only reference**, which uses labels to select training examples, performed better on this particular split: ROC-AUC **0.9595**, average precision **0.6197**, precision **0.4188**, recall **0.8163**, and F1 **0.5536**; TN=56,753, FP=111, FN=18, TP=80, with 191 alerts. It is a different, label-assisted experiment, and generated 28 more false positives than the primary model. The reference and primary metrics from the comparison run are retained in [metrics_comparison.json](outputs/metrics_comparison.json).
+In a separate CPU comparison run on the same split, the **normal-only reference**, which uses labels to select training examples, obtained ROC-AUC **0.9595**, average precision **0.6197**, precision **0.4188**, recall **0.8163**, and F1 **0.5536**; TN=56,753, FP=111, FN=18, TP=80, with 191 alerts. It is a different, label-assisted experiment and produced 28 more false positives than that run’s CPU primary model. Both CPU comparison results are retained in [metrics_comparison.json](outputs/metrics_comparison.json). Results may differ between CPU and MPS runs.
 
 ## Visual results
 
