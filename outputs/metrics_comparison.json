@@ -1,0 +1,62 @@
+{
+  "dataset": {
+    "rows": 284807,
+    "columns": 31,
+    "legitimate": 284315,
+    "fraud": 492,
+    "fraud_percentage": 0.1727485630620034
+  },
+  "quick": false,
+  "train_rows": 227845,
+  "test_rows": 56962,
+  "test_fraud": 98,
+  "device": "cpu",
+  "configuration": {
+    "contamination": 0.001727485630620034,
+    "preprocessing": false,
+    "hidden_neuron_list": [
+      64,
+      32
+    ],
+    "hidden_activation_name": "relu",
+    "batch_norm": true,
+    "dropout_rate": 0.2,
+    "lr": 0.001,
+    "epoch_num": 20,
+    "batch_size": 256,
+    "random_state": 42
+  },
+  "primary_unsupervised": {
+    "precision": 0.16161616161616163,
+    "recall": 0.16326530612244897,
+    "f1": 0.16243654822335024,
+    "roc_auc": 0.9533871722577606,
+    "average_precision": 0.11167178305286661,
+    "tn": 56781,
+    "fp": 83,
+    "fn": 82,
+    "tp": 16,
+    "predicted_anomalies": 99,
+    "predicted_anomaly_percentage": 0.17380007724447877,
+    "threshold": 8.570630073547363,
+    "training_seconds": 47.47588920802809,
+    "training_rows": 227845
+  },
+  "normal_only_reference": {
+    "precision": 0.418848167539267,
+    "recall": 0.8163265306122449,
+    "f1": 0.5536332179930796,
+    "roc_auc": 0.959523007993293,
+    "average_precision": 0.619743481281291,
+    "tn": 56753,
+    "fp": 111,
+    "fn": 18,
+    "tp": 80,
+    "predicted_anomalies": 191,
+    "predicted_anomaly_percentage": 0.33531126013833784,
+    "threshold": 8.27839469909668,
+    "training_seconds": 44.06292454095092,
+    "training_rows": 227451
+  },
+  "total_seconds": 93.42961654195096
+}

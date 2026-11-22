@@ -1,0 +1,9 @@
+include README.md requirements.txt run_experiment.py
+include data/README.md
+recursive-include fraud_detection *.py
+recursive-include tests *.py
+recursive-include outputs *.png *.json *.csv
+recursive-include docs/screenshots *.png
+exclude data/creditcard.csv
+
+prune outputs/quick

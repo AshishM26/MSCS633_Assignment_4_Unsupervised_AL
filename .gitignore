@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.vscode/
+.idea/
+*.log
+data/creditcard.csv
+data/*.zip
+build/
+dist/
+*.egg-info/
+outputs/quick/
