@@ -5,15 +5,29 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 .DS_Store
 .vscode/
 .idea/
 *.log
-data/creditcard.csv
+
+# Local datasets and compressed/raw data
+data/*.csv
+data/*.csv.gz
+data/*.parquet
 data/*.zip
+
+# Generated build/package artifacts
 build/
 dist/
 *.egg-info/
+
+# Local model checkpoints / experiment scratch files
+*.pt
+*.pth
+*.ckpt
 outputs/quick/
 
 # Local working notes and guides
